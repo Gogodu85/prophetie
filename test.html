@@ -1,34 +1,27 @@
-<div class="output-container">
-<div class="output-sizer">
-<div id="result_div" class="result"><iframe id="iFrameKey-b1617e90-e1f4-4aeb-a7b5-d979f7b5972a" src="https://cdpn.io/boomboom/v2/index.html?key=iFrameKey-b1617e90-e1f4-4aeb-a7b5-d979f7b5972a" name="CodePen" allowfullscreen="true" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowtransparency="true" allowpaymentrequest="true" class="result-iframe"></iframe>
+<?xml version="1.0"?>
 
-<div id="editor-drag-cover" class="drag-cover"></div>
-</div>
-<div id="box-console" class="box box-console">
-<div class="editor-resizer editor-resizer-console" title="Drag to resize. Double-click to expand."></div>
-<div class="powers">
-<div class="powers-drag-handle" title="Drag to resize. Double-click to expand."></div>
-<div class="editor-actions-left">
-<h2 class="box-title"><span class="box-title-name">Console</span></h2>
-</div>
-<div class="editor-actions-right">
-<button class="button button-medium mini-button console-clear-button" title="Clear">
-Clear
-</button>
-<button class="button button-medium mini-button close-editor-button" data-type="console" title="Close">
-<svg class="icon-x">
-<use xlink:href="/svg_sprite?v=9637ff09#x"></use>
-</svg>
-</button>
-</div>
-</div>
-<div class="console-wrap">
-<div class="console-entries short-no-scroll"></div>
-<div class="console-command-line">
-<span class="console-arrow forwards"></span>
-<textarea class="console-command-line-input auto-expand" rows="1" data-min-rows="1"></textarea>
-</div>
-</div>
-</div>
-</div>
-</div>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog id="donothing" title="Do Nothing"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        ondialogaccept="return doOK();"
+        ondialogcancel="return doCancel();">
+
+<script>
+function doOK()
+{
+  alert("You pressed OK!");
+  return true;
+}
+
+function doCancel()
+{
+  alert("You pressed Cancel!");
+  return true;
+}
+</script>
+
+<description value="Select a button"/>
+
+</dialog>
